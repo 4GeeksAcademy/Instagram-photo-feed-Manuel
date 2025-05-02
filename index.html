@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IG Photo feed</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand"><i class="fa-brands fa-instagram"></i>Instagram</a>
+        <!-- Button trigger modal -->
+        <div class="d-flex gap-2">
+          <div>
+            <form class="d-flex" role="search"> <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Create New Post
+              </button>
+            </form>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Create a New Post</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Caption:</strong></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <button type="button" class="btn btn-secondary"><i class="fa-solid fa-camera"></i></button>
+              <button type="button" class="btn btn-secondary"><i class="fa-solid fa-location-dot"></i></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Publish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+    </div>
+    </nav>
+  </header>
+
+  <main class="p-4">
+    <section>
+      <article>
+        <div class="button-switch">
+          <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                  class="fa-solid fa-table-cells"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                  class="fa-solid fa-image"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div class="container text-center">
+              <!-- Fila 1 -->
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img src="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1182/1726641411182-i"
+                      class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img
+                      src="https://a.storyblok.com/f/178900/1064x1604/cc1d741793/demonslayercastillo1_eslatam.jpg/m/filters:quality(95)format(webp)"
+                      class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img
+                      src="https://elcomercio.pe/resizer/v2/AFYR2FUIPZGBNGMKJ42B6VNIMI.jpg?auth=6a400772acd99db1e099ce30d96e664fc6346b053adadc5048d2ff1ed4671333&width=1200&height=810&quality=90&smart=true"
+                      class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fila 2 -->
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img
+                      src="https://fanatical.imgix.net/product/original/0813915c-7e89-4061-878f-200e42ccc784.jpeg?auto=compress,format&w=870&fit=crop&h=489"
+                      class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img
+                      src="https://m.media-amazon.com/images/M/MV5BMTAzNTE3YjctNjMxMy00OGZlLWJlM2EtZjc3MGM5ODVlZjg5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                      class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img
+                      src="https://i.ytimg.com/vi/-UHYmKZFurI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCfOeUtFqxPr9DBXb6UbJpJGpnMWg"
+                      class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fila 3 -->
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img src="https://blog.innvictus.com/hubfs/hit-me-hard-soft-billie-eilish.webp" class="card-img-top"
+                      alt="...">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img src="https://www.popelera.net/wp-content/uploads/2024/05/billie-eilish-tour.jpg"
+                      class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img src="https://www.guiadeprensa.com/wp-content/uploads/2023/11/4Geeks-Academy-logo.jpg"
+                      class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tab 2 (icono de imagen - carta sola) -->
+       
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+            tabindex="0">
+            <div class="d-flex flex-column align-items-center mt-4 gap-4">
+              <div class="card" style="width: 24rem;">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-user-circle fa-lg"></i>
+                    <strong>EpicStream</strong>
+                  </div>
+                  <button class="btn btn-outline-primary btn-sm">Follow</button>
+                </div>
+                <img src="https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1182/1726641411182-i"
+                  class="card-img-top" alt="Instagram post">
+                <div class="card-body">
+                  <div class="d-flex gap-3 mb-2">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <p class="mb-1"><strong>8.9M likes</strong></p>
+                  <p class="mb-1"><strong>EpicStream</strong>🔥💥 ¡Jujutsu Kaisen Temporada 2 arrasa en audiencia! 💥🔥
+
+                    La segunda temporada de Jujutsu Kaisen ha alcanzado cifras impresionantes en su emisión en Japón, con un promedio de 6.3 millones de espectadores por episodio, superando a otros grandes como One Piece .
+                    El episodio 4, que mostró el despertar de Gojo, alcanzó los 6.79 millones de espectadores, convirtiéndose en el más visto de la temporada .
+                    Además, Jujutsu Kaisen ha sido reconocida como el anime más popular del mundo por Guinness World Records, con una demanda global 71.2 veces superior al promedio .
+                    📅 Fecha de estreno: 14 de febrero de 2025.
+                    📺 Dónde verlo:Plataformas oficiales de anime.
+                    <span class="text-primary">#JujutsuKaisen #Temporada2 #Anime #Gojo</span>
+                    <span class="text-primary">#GuinnessWorldRecords</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 24rem;">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-user-circle fa-lg"></i>
+                    <strong>Cinesa</strong>
+                  </div>
+                  <button class="btn btn-outline-primary btn-sm">Follow</button>
+                </div>
+                <img
+                  src="https://a.storyblok.com/f/178900/1064x1604/cc1d741793/demonslayercastillo1_eslatam.jpg/m/filters:quality(95)format(webp)"
+                  class="card-img-top" alt="Instagram post">
+                <div class="card-body">
+                  <div class="d-flex gap-3 mb-2">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <p class="mb-1"><strong>1.9M likes</strong></p>
+                  <p class="mb-1"><strong>Cinesa</strong> 🔥🗡️ ¡La batalla final comienza en el Castillo Infinito! 🗡️🔥
+
+                    La esperada película Kimetsu no Yaiba: La Fortaleza Infinita se estrenará en España el 12 de septiembre de 2025. Esta cinta es la primera de una trilogía que adaptará el arco final del anime, llevando a Tanjiro y su equipo a enfrentarse a Muzan Kibutsuji en la mítica Fortaleza Infinita. La película promete intensas batallas y momentos emocionantes que cerrarán esta épica historia.
+                    🎟️ ¿Estás listo para el desenlace? ¡Marca la fecha y prepárate para vivir la emoción en la gran pantalla!
+                    <span class="text-primary">#DemonSlayer #KimetsuNoYaiba #LaFortalezaInfinita #Anime </span>
+                    <span class="text-primary">#Estreno2025 #FinalÉpico #Tanjiro #Muzan #BatallaFinal</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 24rem;">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-user-circle fa-lg"></i>
+                    <strong>Crunchyroll</strong>
+                  </div>
+                  <button class="btn btn-outline-primary btn-sm">Follow</button>
+                </div>
+                <img
+                  src="https://elcomercio.pe/resizer/v2/AFYR2FUIPZGBNGMKJ42B6VNIMI.jpg?auth=6a400772acd99db1e099ce30d96e664fc6346b053adadc5048d2ff1ed4671333&width=1200&height=810&quality=90&smart=true"
+                  class="card-img-top" alt="Instagram post">
+                <div class="card-body">
+                  <div class="d-flex gap-3 mb-2">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <p class="mb-1"><strong>3.7M likes</strong></p>
+                  <p class="mb-1"><strong>Crunchyroll</strong> 🔥🦁 ¡Goku alcanza el Super Saiyan 4 en Dragon Ball Daima! 🦁🔥
+
+                    Tras casi 30 años de espera, Goku ha alcanzado oficialmente la transformación Super Saiyan 4 en Dragon Ball Daima. Este momento histórico ocurre en el episodio 18, titulado "Despertar", donde Goku se enfrenta al Rey Gomah. Gracias a la ayuda de Neva, Goku recupera su cola y, al aprovechar su poder Ozaru, desencadena esta poderosa transformación. Este episodio marca un hito al integrar esta forma en el canon oficial de la serie, con el diseño creado por Akira Toriyama específicamente para Daima .
+                    
+                    📅 Fecha de estreno: 14 de febrero de 2025.
+                    📺 Dónde verlo: Crunchyroll.
+                    
+                    <span class="text-primary">#DragonBallDaima #SuperSaiyan4 #Goku</span>
+                    <span class="text-primary">#AkiraToriyama #Anime #DragonBall #Transformación</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 24rem;">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-user-circle fa-lg"></i>
+                    <strong>3DGAMES</strong>
+                  </div>
+                  <button class="btn btn-outline-primary btn-sm">Follow</button>
+                </div>
+                <img
+                  src="https://fanatical.imgix.net/product/original/0813915c-7e89-4061-878f-200e42ccc784.jpeg?auto=compress,format&w=870&fit=crop&h=489"
+                  class="card-img-top" alt="Instagram post">
+                <div class="card-body">
+                  <div class="d-flex gap-3 mb-2">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <p class="mb-1"><strong>4.3M likes</strong></p>
+                  <p class="mb-1"><strong>3DGAMES</strong> 🌑✨ ¡La sombra del Erdtree se extiende! ✨🌑
+
+                    La expansión Shadow of the Erdtree de Elden Ring ya está disponible desde el 21 de junio de 2024. Esta nueva aventura nos lleva al misterioso Reino de las Sombras, donde exploraremos vastos mapas, mazmorras y enfrentaremos nuevos enemigos. La historia sigue al Sinluz en su búsqueda de Miquella, quien ha abandonado su cuerpo para viajar a este reino oculto. La expansión introduce un sistema de bendición del Reino de las Sombras que afecta la progresión del juego .
+                   
+                    
+                    Con una recepción crítica positiva y ventas que superaron los 5 millones de unidades en los primeros tres días, Shadow of the Erdtree ha sido aclamada por su diseño de niveles y la complejidad de su narrativa .
+                    Wikipedia, la enciclopedia libre
+                    
+                    ¿Estás listo para adentrarte en la sombra y descubrir los secretos que aguardan? 🌑🗡️
+                    <span class="text-primary">#EldenRing #ShadowOfTheErdtree #Expansión #Videojuegos</span>
+                    <span class="text-primary">#RPG #FromSoftware #GamingNews</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 24rem;">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-user-circle fa-lg"></i>
+                    <strong>Cinesa</strong>
+                  </div>
+                  <button class="btn btn-outline-primary btn-sm">Follow</button>
+                </div>
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BMTAzNTE3YjctNjMxMy00OGZlLWJlM2EtZjc3MGM5ODVlZjg5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                  class="card-img-top" alt="Instagram post">
+                <div class="card-body">
+                  <div class="d-flex gap-3 mb-2">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <p class="mb-1"><strong>1.7M likes</strong></p>
+                  <p class="mb-1"><strong>Cinesa</strong> 🎬🧸 ¡Los animatrónicos regresan al cine! 🧸🎬
+
+                    La secuela de Five Nights at Freddy's ya tiene fecha de estreno: 5 de diciembre de 2025. La película, dirigida por Emma Tammi, contará nuevamente con Josh Hutcherson en el papel de Mike Schmidt y Matthew Lillard como William Afton .
+                   
+                    
+                    El rodaje comenzó a finales de 2024 y concluyó a principios de 2025. Recientemente, se han compartido imágenes desde el set, mostrando a los nuevos animatrónicos que formarán parte de esta secuela .
+                  
+                    🔍 ¿Qué podemos esperar?
+                    
+                    Una expansión del universo de Five Nights at Freddy's con nuevos personajes y escenarios.
+                    
+                    Más acción y terror, llevando la historia más allá de las paredes de Freddy Fazbear's Pizza.
+                    
+                    Un enfoque más profundo en la historia de Mike y su conexión con los eventos paranormales.
+                  
+                    
+                    🎟️ ¿Estás listo para otra noche de terror? ¡Marca el 5 de diciembre en tu calendario y prepárate para enfrentarte a los horrores que acechan en la oscuridad!
+                    <span class="text-primary">#FiveNightsAtFreddys2 #FNAF2 #PelículaDeTerror #JoshHutcherson</span>
+                    <span class="text-primary">#MatthewLillard #EmmaTammi #Estreno2025 #CineDeTerror</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 24rem;">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-user-circle fa-lg"></i>
+                    <strong>Steam Games</strong>
+                  </div>
+                  <button class="btn btn-outline-primary btn-sm">Follow</button>
+                </div>
+                <img
+                  src="https://i.ytimg.com/vi/-UHYmKZFurI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCfOeUtFqxPr9DBXb6UbJpJGpnMWg"
+                  class="card-img-top" alt="Instagram post">
+                <div class="card-body">
+                  <div class="d-flex gap-3 mb-2">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <p class="mb-1"><strong>360K likes</strong></p>
+                  <p class="mb-1"><strong>Steam Games</strong> 🖤🎮 ¡The Joy of Creation regresa más aterrador que nunca! 🎮🖤
+
+                    El clásico juego de terror inspirado en Five Nights at Freddy's ha sido completamente renovado con Unreal Engine 5, ofreciendo una experiencia visual y jugable de otro nivel. Desarrollado por Nikson y respaldado por la iniciativa Fazbear Fanverse de Scott Cawthon, este remake te pone en la piel de un creador enfrentando las manifestaciones de su propia mente.
+                    
+                    🔍 ¿Qué hay de nuevo?
+                    
+                    Gráficos en tiempo real con Unreal Engine 5.
+                    
+                    Cinco niveles únicos que combinan exploración libre y mecánicas clásicas de supervivencia.
+                    
+                    Una narrativa más profunda y envolvente.
+                    Game Jolt
+                    
+                    🎮 Demo gratuita disponible en Steam
+                    Ya puedes probar el primer nivel de este remake en Steam. La versión completa está prevista para su lanzamiento en 2025. ¡No te pierdas esta nueva entrega que promete mantenerte al borde del asiento!
+                    <span class="text-primary">#TheJoyOfCreation #Remake #TJoC</span>
+                    <span class="text-primary">#FNaF #Terror #Videojuegos #Steam #UnrealEngine5 #FazbearFanverse</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 24rem;">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-user-circle fa-lg"></i>
+                    <strong>Spotify</strong>
+                  </div>
+                  <button class="btn btn-outline-primary btn-sm">Follow</button>
+                </div>
+                <img src="https://blog.innvictus.com/hubfs/hit-me-hard-soft-billie-eilish.webp" class="card-img-top"
+                  alt="Instagram post">
+                <div class="card-body">
+                  <div class="d-flex gap-3 mb-2">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <p class="mb-1"><strong>12.6M likes</strong></p>
+                  <p class="mb-1"><strong>Spotify</strong> 🟢🎧 BILLIE EILISH ROMPE SPOTIFY (otra vez)
+                    ⁣
+                    Su nuevo álbum "Hit Me Hard and Soft" debutó el 17 de mayo de 2024 y ya está haciendo historia:
+                    ⁣
+                    💥 +72 MILLONES de streams en su primer día
+                    🌍 +500 MILLONES en su primera semana
+                    🚀 +2 MIL MILLONES en menos de 2 meses
+                    ⁣
+                    ¿El álbum más rápido en llegar a esa cifra en su carrera? ✔️
+                    ⁣
+                    Y por si fuera poco, Billie y Spotify montaron una experiencia inmersiva brutal en el espacio Lightroom de Londres 🎥✨
+                    Proyecciones gigantes, sonido 360 y todo un universo visual para perderse dentro del disco.
+                    ⁣
+                    Sí, Billie no solo sacó un álbum. Creó un multiverso.
+                    ⁣
+                    ¿Ya lo escuchaste? ¿Tema favorito? 👀👇
+                    <span class="text-primary">#Billieeilish</span>
+                    <span class="text-primary">#spotify</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 24rem;">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-user-circle fa-lg"></i>
+                    <strong>Ticketmaster</strong>
+                  </div>
+                  <button class="btn btn-outline-primary btn-sm">Follow</button>
+                </div>
+                <img src="https://www.popelera.net/wp-content/uploads/2024/05/billie-eilish-tour.jpg"
+                  class="card-img-top" alt="Instagram post">
+                <div class="card-body">
+                  <div class="d-flex gap-3 mb-2">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <p class="mb-1"><strong>9.8M likes</strong></p>
+                  <p class="mb-1"><strong>Ticketmaster</strong> 🎤 Billie Eilish: Hit Me Hard and Soft – The Tour (2024–2025)
+                    Billie Eilish está recorriendo el mundo con su séptima gira, Hit Me Hard and Soft: The Tour, en apoyo a su tercer álbum de estudio del mismo nombre. La gira comenzó el 29 de septiembre de 2024 en Quebec, Canadá, y concluirá el 27 de julio de 2025 en Dublín, Irlanda, abarcando un total de 83 conciertos en América del Norte, Oceanía y Europa. 
+                    Palau Sant Jordi
+                    +5
+                    Wikipedia
+                    +5
+                    Billie Eilish Wiki
+                    +5
+                    
+                    📍 Fechas en España
+                    Billie Eilish se presentará en el Palau Sant Jordi de Barcelona los días 14 y 15 de junio de 2025. Las entradas están disponibles a través de Ticketmaster.
+                    <span class="text-primary">#HitmeHardandSoft</span>
+                    <span class="text-primary">#España</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 24rem;">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-user-circle fa-lg"></i>
+                    <strong>Manuel_Afonseca</strong>
+                  </div>
+                  <button class="btn btn-outline-primary btn-sm">Follow</button>
+                </div>
+                <img src="https://www.guiadeprensa.com/wp-content/uploads/2023/11/4Geeks-Academy-logo.jpg"
+                  class="card-img-top" alt="Instagram post">
+                <div class="card-body">
+                  <div class="d-flex gap-3 mb-2">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <p class="mb-1"><strong>2.1M likes</strong></p>
+                  <p class="mb-1"><strong>Manuel_Afonseca</strong> 👨‍💻🪦 Sobreviví al Terminal Challenge y ahora tengo PTSD cada vez que abro la consola.
+
+                    En 4Geeks Academy nos dijeron:
+                    "Este proyectico es pa’ que se suelten usando la terminal 😄"
+                    Y uno, confiado, pensando que era mover carpetas y ya:
+                    cd proyecto, ls, mkdir cosas, "mira mamá soy hacker 😎"
+                    
+                    Pero no, hermano.
+                    A los 10 minutos estaba con 8 pestañas de Stack Overflow, hablando con la terminal como si fuera una persona:
+                    — ¿Qué quieres de mí?
+                    — ¿Por qué no me dejas salir del directorio?
+                    — ¿Dónde está el bendito archivo oculto? 😩
+                    
+                    Después me tocó usar rm y me sentí como si tuviera un botón nuclear en las manos:
+                    “Si escribo esto mal, se borra el planeta Tierra, ¿no?”
+                    
+                    Y sí, aprendí:
+                    🧠 grep no es un virus, es un pana.
+                    👻 Los archivos ocultos existen… y están más escondidos que mis ganas de seguir.
+                    👨‍🏫 Y los profes claramente se divierten viendo nuestro sufrimiento (con cariño 😌).
+                    
+                    Lo bueno: ya no le tengo miedo a la terminal.
+                    Lo malo: me dieron ganas de formatear la vida.
+                    
+                    ¿Tú también lo hiciste? ¿Lloraste en .bash_history o saliste ileso?
+                    <span class="text-primary">#4GeeksAcademy #TerminalChallenge</span>
+                    <span class="text-primary">#DevLife #AprendiendoConTrauma #LoHicePorElTítulo</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>    
+      </article>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

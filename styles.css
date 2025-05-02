@@ -1,0 +1,10 @@
+.card-img-top {
+    height: 300px;         /* Altura fija */
+    object-fit: cover;     /* Rellenar el espacio sin deformarse */
+    border-radius: 5px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+ 
